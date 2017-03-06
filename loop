@@ -1,0 +1,16 @@
+
+
+#!/bin/bash
+
+#while loop
+while [ "$*" != "" ]
+do
+  echo "value is $1"
+  shift
+done
+
+#for loop
+for item in "$*"
+do
+  echo "value is $item"
+done
