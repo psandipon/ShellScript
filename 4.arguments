@@ -1,0 +1,21 @@
+Command line arguments can be passed to the shell scripts. 
+There exists a number of built in variables
+
+  $* ‐ command line arguments   $# ‐ number of arguments
+  $n ‐ nth argument in $*
+  
+  ./script_name arg1 arg2 .... argn
+  
+  
+#example:
+for(( i=0;i<=50;i++))
+do
+  echo $i
+done
+
+#example:
+
+#!/bin/bash
+echo "My first name is $1"
+echo "My surname is $2"
+echo "Total number of arguments is $#" 
