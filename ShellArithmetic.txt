@@ -1,0 +1,31 @@
+Shell Arithmetic
+
+Use to perform arithmetic operations.
+
+Syntax:
+expr op1 math-operator op2
+
+Examples: 
+$ expr 1 + 3
+$ expr 2 - 1
+$ expr 10 / 2
+$ expr 20 % 3
+$ expr 10 \* 3
+$ echo `expr 6 + 3`
+
+Note:
+expr 20 %3 - Remainder read as 20 mod 3 and remainder is 2.
+expr 10 \* 3 - Multiplication use \* and not * since its wild card.
+
+For the last statement not the following points
+
+(1) First, before expr keyword we used ` (back quote) sign not the (single quote i.e. ') sign. Back quote is generally found on the key under tilde (~) on PC keyboard OR to the above of TAB key.
+
+(2) Second, expr is also end with ` i.e. back quote.
+
+(3) Here expr 6 + 3 is evaluated to 9, then echo command prints 9 as sum
+
+(4) Here if you use double quote or single quote, it will NOT work
+For e.g.
+$ echo "expr 6 + 3" # It will print expr 6 + 3
+$ echo 'expr 6 + 3' # It will print expr 6 + 3
